@@ -1,9 +1,10 @@
 
-function setPrice(){
 
-var pepsiPrice = 1.22
-document.getElementById("Pepsi").value = pepsiPrice;
-
+var runningTotal = 0;
+function findTotal(price){
+	
+    runningTotal = runningTotal + parseFloat(price);
+     document.getElementById("Total").value=runningTotal;
 }
 
 
